@@ -6,8 +6,8 @@ student(job).
 
 
 % encoding
-need_prereq(X, Y) :- prereq(X, Z), not taken(Z,Y).
-elligible(X, Y) :- student(Y), not need_prereq(X, Y)
+need_prereq(X, Y) :- student(Y), prereq(X, Z), not taken(Y,Z).
+elligible(X, Y) :- couse(X), student(Y), not need_prereq(X, Y).
 
 % the prereq to a course is also a course
 course(X) :- prereq(Y, X).
