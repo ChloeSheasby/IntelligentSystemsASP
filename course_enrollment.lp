@@ -1,5 +1,5 @@
 % instance
-course(programming2).
+course(datastructs).
 prereq(programming2, programming1).
 taken(job, programming1).
 student(job).
