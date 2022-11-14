@@ -16,7 +16,7 @@ student(adam).
 
 course(calc1).
 course(calc2).
-prereq(calc1, calc2).
+prereq(calc2, calc1).
 taken(jack, calc1).
 student(jack).
 
